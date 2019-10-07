@@ -1,0 +1,71 @@
+.app-header {
+    background-image: url(../../assets/images/bg-top.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    font-size: .8rem;
+    font-weight: bold;
+    
+    @media (orientation:landscape) {
+        height: 100vh;
+    }
+    
+    @include media-breakpoint-up(xl) {
+        height: 100vh;
+    }
+
+    #toggler {
+        background-color: rgba($color: $bg-light, $alpha: 0);
+        transition: background-color .35s linear;
+
+        &.bg-custom {
+            background-color: rgba($color: $bg-light, $alpha: 1);
+        }
+
+        @include media-breakpoint-up(sm) {
+            background-color: transparent !important;
+        }
+    }
+
+    .logo {
+        width: 4.063rem;
+
+        &-mobile {
+            width: 4.063rem;
+        }
+    }
+
+    .navbar-toggler {
+        width: 3.75rem;
+        height: 3.75rem;
+        padding: .5rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    #toggle-menu {
+        .navbar-nav {
+            .nav-item {
+                text-transform: uppercase;
+                display: flex;
+                justify-content: flex-end;
+                padding: .5rem;
+
+                @include media-breakpoint-up(sm) {
+                    padding: .5rem 0;
+                }
+
+                &:nth-child(1)::after,
+                &:nth-child(4)::after{
+                    @include media-breakpoint-up(sm) {
+                        content: ".";
+                        margin: auto .7rem .5rem .7rem;
+                    }
+                }
+            }
+        }
+    }
+}

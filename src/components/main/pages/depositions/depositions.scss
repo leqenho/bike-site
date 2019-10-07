@@ -1,0 +1,30 @@
+.app-depositions {
+    background-color: $bg-light;
+
+    h5 {
+        text-transform: inherit;
+        span {
+            text-transform: lowercase;
+            margin-left: .2rem;
+        }
+    }
+
+    p {
+        font-style: italic;
+    }
+
+    .carousel-indicators {
+        li {
+            width: .6rem;
+            height: .6rem;
+            border-radius: 50%;
+            background: none;
+            border: .075rem solid $indicator;
+
+            &.active {
+                background: $indicator-active;
+                border-color: $indicator-active;
+            }
+        }
+    }
+}

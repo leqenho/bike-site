@@ -1,0 +1,48 @@
+#contact {
+    .form-header {
+        text-align: center;
+        img, h6 {
+            margin-bottom: 1.5rem;
+        }
+
+        h6 {
+            color: $text-light;
+            text-transform: inherit;
+            font-style: italic;
+        }
+    }
+
+    .form-inline {
+        flex-wrap: nowrap;
+
+        .form-group {
+            flex-grow: 1;
+
+            .form-control {
+                padding: 1rem .8rem;
+                height: inherit;
+                border-radius: 0;
+                width: 100%;
+
+                @include media-breakpoint-up(sm) {
+                    padding: 1rem 1.8rem;
+                }
+            }
+        }
+
+        .btn-primary {
+            background-color: rgba($color: $color-primary, $alpha: .7);
+            border: none;
+            text-transform: uppercase;
+            padding: 1rem 1.8rem;
+            margin-left: 0.6rem;
+            border-radius: 0;
+            cursor: pointer;
+            font-weight: 300;
+
+            &:hover {
+                background-color: rgba($color: $color-primary, $alpha: 1);
+            }
+        }
+    }
+}

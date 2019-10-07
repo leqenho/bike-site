@@ -1,0 +1,13 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+@import './fonts';
+@import './variables';
+@import './global';
+
+@import './components/header/header';
+@import './components/main/pages/about/about';
+@import './components/main/pages/bikes/bikes';
+@import './components/main/pages/depositions/depositions';
+@import './components//main/pages/shop/shop';
+@import './components/main/pages/contact/contact';
+@import './components/footer/footer';
