@@ -1,6 +1,7 @@
 {
   "name": "bike-site",
   "version": "0.1.0",
+  "homepage": "https://leqenho.github.io/bike-site",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -10,14 +11,13 @@
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"
   },
-  "homepage": "https://leqenho.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
