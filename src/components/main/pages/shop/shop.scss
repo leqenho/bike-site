@@ -1,0 +1,69 @@
+#shop {
+    .galery {
+        display: grid;
+        grid-template-areas:
+            'img1 img2'
+            'img3 img3'
+            'img4 img5'
+            'img6 img6'
+            'img7 img8';
+
+        .elem {
+            position: relative;
+
+            &-1 {grid-area: img1;}
+            &-2 {grid-area: img2;}
+            &-3 {grid-area: img3;}
+            &-4 {grid-area: img4;}
+            &-5 {grid-area: img5;}
+            &-6 {grid-area: img6;}
+            &-7 {grid-area: img7;}
+            &-8 {grid-area: img8;}
+
+            
+            .overlay {
+                background: rgba($color: $bg-overlay, $alpha: .8);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                opacity: 0;
+                transition: all .2s linear;
+                font-weight: 300;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+
+        @media screen and (orientation: landscape), (min-width: 576px) {
+            grid-template-areas:
+                'img1 img2 img4'
+                'img3 img3 img4'
+                'img5 img6 img6'
+                'img5 img7 img8';
+        }
+
+        @media (min-width: 768px) and (orientation: landscape), (min-width: 992px) {
+            grid-template-areas:
+                'img1 img2 img4 img5 img6 img6'
+                'img3 img3 img4 img5 img7 img8';
+        }
+    }
+    .discover {
+        background-color: $bg-darken;
+
+        &-btn {
+            background-color: transparent;
+            border: 1px solid $white;
+            font-weight: bold;
+        }
+    }
+}
